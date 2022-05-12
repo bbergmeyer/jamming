@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import { SearchBar } from '../SearchBar/SearchBar';
-import {SearchResults} from '../SearchResults/SearchResults';
+import { SearchResults } from '../SearchResults/SearchResults';
 import { Playlist } from '../Playlist/Playlist';
 
 class App extends React.Component {
   constructor(props) {
-    super(props);
-    this.setState = {} 
+    super(props)
+    this.setState = {searchResults: [ {name: 'Tiny Dancer', artist: 'Elton John', album: 'Madman Accross The Water', id: 1} ]} 
   }
   render() {
     return (
@@ -16,7 +16,7 @@ class App extends React.Component {
         <div className="App">
           <SearchBar />
           <div className="App-playlist">
-          <SearchResults />
+          <SearchResults searchResults={this.state.searchResults}/>
           <Playlist />
         </div>
       </div>
