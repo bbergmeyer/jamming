@@ -35,3 +35,30 @@
     font-weight: 300;
     color: rgba(256, 256, 256, 0.8);
   }
+
+  img {
+    height: 60px;
+    width: auto;
+    margin-right: 10px;
+    
+  }
+  .audioPlayer {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+  
+ #playPause {
+  position: absolute;
+  padding-right:10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+
+ h3:hover {
+   cursor: default;
+ }
+
+  

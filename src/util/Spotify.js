@@ -41,7 +41,9 @@ const Spotify = {
                 name: track.name,
                 artist: track.artists[0].name,
                 album: track.album.name,
-                uri: track.uri
+                uri: track.uri,
+                albumImage: track.album.images[0].url,
+                trackPreview: track.preview_url
             }));
         }); 
     },
